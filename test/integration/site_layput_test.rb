@@ -8,6 +8,7 @@ class SiteLayputTest < ActionDispatch::IntegrationTest
       assert_select"a[href=?]",'/',count:2
       assert_select"a[href=?]",'/mariage',count:2
       assert_select"a[href=?]",'/about_chocolat',count:2
+      assert_select"a[href=?]",'/signup'
       
     get mariage_path
       
@@ -15,6 +16,9 @@ class SiteLayputTest < ActionDispatch::IntegrationTest
       
     get about_chocolat_path
       assert_template 'home/about_chocolat'
+    
+    get signup_path
+      assert_template 'users/new'
       
   end
     

@@ -85,6 +85,7 @@ main h2 {
 #main_content{
   float: left;
   width: 600px;
+  
 }
 
 #asidebar ul li img{
@@ -97,7 +98,8 @@ main h2 {
   width: 300px;
 }
 
-#home h2 {
+#intro h2,
+#info  h2{
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 30px;

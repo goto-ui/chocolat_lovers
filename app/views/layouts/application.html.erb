@@ -2,41 +2,12 @@
 <html>
   <head>
     <title><%=full_title(yield(:title))%></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+    <%= render 'layouts/Rails_default'%>
+    <%= render 'layouts/shim' %>
   </head>
   <body id = "home">
-    <!--header begin-->
-    <header id = "top">
-        <h1><%= link_to "CHOCOLAT_LOVERS", '/', id: "logo" %></h1>
-      <nav>
-        <ul class = "clearfix">
-          <li><%=link_to "マリアージュについて","#" %></li>
-          <li><%=link_to "チョコレートの基礎知識","#" %></li>
-          <li><%=link_to "新規登録","#"%></li>
-          <li><%=link_to "ログイン","#"%></li>
-        </ul>
-      </nav>
-    </header>
-    <!--header end-->
-    
+    <%= render 'layouts/header' %>
     <%= yield %>
-    
-    <!--footer begin-->
-    <footer>
-        <ul>
-          <li><%=link_to "マリアージュについて","#" %></li>
-          <li><%=link_to "チョコレートの基礎知識","#" %></li>
-          <li><%=link_to "TOP","/"%></li>
-        </ul>
-        <small>&copy; CHOCOLAT_LOVERS</small>
-    </footer>
-    <!--footer end-->
-    
+    <%= render 'layouts/footer'%>
   </body>
 </html>

@@ -12,13 +12,13 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "should get mariage" do
-    get home_mariage_url
+    get mariage_path
     assert_response :success
     assert_select "title", "Mariage | #{@base_title}"
   end
   
   test "should get about_chocolat" do
-    get home_about_chocolat_url
+    get about_chocolat_path
     assert_response :success
     assert_select "title", "About_chocolat | #{@base_title}"
   end

@@ -10,16 +10,33 @@
       </script>
     <![endif]-->
   </head>
-  <body>
-    <header>
-        <%= link_to "CHOCOLAT_LOVERS", '#', id: "logo" %>
-      <ul>
-        <li><%=link_to "マリアージュについて","#" %></li>
-        <li><%=link_to "チョコレートの基礎知識","#" %></li>
-        <li><%=link_to "新規登録","#"%></li>
-        <li><%=link_to "ログイン","#"%></li>
-      </ul>
+  <body id = "home">
+    <!--header begin-->
+    <header id = "top">
+        <h1><%= link_to "CHOCOLAT_LOVERS", '/', id: "logo" %></h1>
+      <nav>
+        <ul class = "clearfix">
+          <li><%=link_to "マリアージュについて","#" %></li>
+          <li><%=link_to "チョコレートの基礎知識","#" %></li>
+          <li><%=link_to "新規登録","#"%></li>
+          <li><%=link_to "ログイン","#"%></li>
+        </ul>
+      </nav>
     </header>
+    <!--header end-->
+    
     <%= yield %>
+    
+    <!--footer begin-->
+    <footer>
+        <ul>
+          <li><%=link_to "マリアージュについて","#" %></li>
+          <li><%=link_to "チョコレートの基礎知識","#" %></li>
+          <li><%=link_to "TOP","/"%></li>
+        </ul>
+        <small>&copy; CHOCOLAT_LOVERS</small>
+    </footer>
+    <!--footer end-->
+    
   </body>
 </html>

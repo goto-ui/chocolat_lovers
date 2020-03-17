@@ -1,16 +1,48 @@
-
-<%= link_to image_tag("b7b59809c3b659d21448eb423daa9b03_s.jpg", alt: "CHOCOLAT_LOVERS_LOGO") %>
-
-<p>
-  このサイトはチョコレートが好きな人たちが集まって
-  チョコレートに関する情報や知識などを投稿して、</br>
-  その情報を共有してさらにチョコレートに関する知識
-  を広めていこうという目的で作られました。</br>
+<main class = "clearfix">
+  <div id = "main_image">
+    <%= link_to image_tag("d5264369d92cd8f1ae5fc580fab1f674_m.jpg", alt: "CHOCOLAT_LOVERS_LOGO") %>
+  </div>
   
-  気になることや教えたい、または教えて欲しいことを
-  どんどん書き込んで、チョコレートをもっともっと
-  好きになりましょう！
-</p>
-
-
-
+  <!--section start-->
+  <div id = "main_content">
+    <section id = "intro">
+      <h2>このサイトについて</h2>
+        <p>
+          このサイトはチョコレートが好きな人たちが集まって</br>
+          チョコレートに関する情報や知識などを投稿して、</br>
+          その情報を共有してさらにチョコレートに関する知識
+          を</br>広めていこうという目的で作られました。</br>
+          気になることや教えたい、または教えて欲しいことを
+          どんどん書き込んで、</br>チョコレートをもっともっと
+          好きになりましょう！
+        </p>
+    </section>
+    
+    <section id = "info">
+      <h2>chocolat-info</h2>
+        <dl>
+          <dt>3月14日</dt>
+          <dd>今日はホワイトデー！どんなチョコレートを送るのかな？</dd>
+          <dt>2月5日</dt>
+          <dd>新宿伊勢丹でバレンタインデースイーツコレクション2020開催</dd>
+          <dt>1月27日</dt>
+          <dd>サロン・デュ・ショコラ2020開催</dd>
+        </dl>
+    </section>
+  </div>
+    <!--section end-->
+    
+    <!--aside begin-->
+    <aside id = "asidebar">
+      <ul>
+        <li>
+          <%= link_to image_tag("cd9b3851c7c560f1d26a3d9cd1bfec34_s.jpg", alt: "CHOCOLAT_LOVERS_LOGO") %>
+        </li>
+        <li>
+          <%= link_to image_tag("cd9b3851c7c560f1d26a3d9cd1bfec34_s.jpg", alt: "CHOCOLAT_LOVERS_LOGO") %>
+        </li>
+      </ul>
+    </aside>
+    <!--aside end-->
+    <!--footer begin -->
+</main>

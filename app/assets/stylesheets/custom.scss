@@ -98,6 +98,11 @@ main h2 {
   width: 300px;
 }
 
+#asidebar ul{
+  margin: 0;
+  padding: 0;
+}
+
 #intro h2,
 #info  h2{
   font-size: 1.5em;
@@ -146,6 +151,8 @@ main h2 {
 
 footer{
   padding: 15px;
+  width:940px;
+  margin: 0 auto;
   text-align:center;
   color:#fff;
   background-color:#614226;
@@ -175,3 +182,42 @@ footer ul li a:active{
 a:hover{
   color:#fff;
 }
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#signup{
+  text-align:center;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+

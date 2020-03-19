@@ -2,18 +2,18 @@
   <h1><%= link_to "CHOCOLAT_LOVERS", '/', id: "logo" %></h1>
   <nav>
     <ul class = "clearfix">
-      <li><%=link_to "マリアージュについて","/mariage" %></li>
-      <li><%=link_to "チョコレートの基礎知識","/about_chocolat" %></li>
+      <li><%=link_to "マリアージュについて",mariage_path %></li>
+      <li><%=link_to "チョコレートの基礎知識",about_chocolat_path %></li>
       <% if logged_in? %>
-        <li><%= link_to "Users", '#' %></li>
+        <li><%= link_to "Users", users_path %></li>
         <li><%= link_to "Profile", current_user %></li>
-        <li><%= link_to "Settings", '#' %></li>
+        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
         <li><%= link_to "お気に入り（仮）", '#' %></li>
         <li><%= link_to "tastingnote", '#' %></li>
         <li><%= link_to "Log out", logout_path, method: :delete %></li>
       <% else %>
-        <li><%=link_to "新規登録","/signup"%></li>
-        <li><%=link_to "ログイン","/login"%></li>
+        <li><%=link_to "新規登録",signup_path%></li>
+        <li><%=link_to "ログイン",login_path%></li>
       <% end %>
     </ul>
   </nav>

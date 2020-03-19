@@ -8,7 +8,7 @@
         <li><%= link_to "Users", users_path %></li>
         <li><%= link_to "Profile", current_user %></li>
         <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-        <li><%= link_to "お気に入り（仮）", '#' %></li>
+        <li><%= link_to "article submission", article_submission_path %></li>
         <li><%= link_to "tastingnote", '#' %></li>
         <li><%= link_to "Log out", logout_path, method: :delete %></li>
       <% else %>

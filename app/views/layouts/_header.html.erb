@@ -9,7 +9,7 @@
         <li><%= link_to "Profile", current_user %></li>
         <li><%= link_to "Settings", edit_user_path(current_user) %></li>
         <li><%= link_to "article submission", article_submission_path %></li>
-        <li><%= link_to "tastingnote", tasting_path %></li>
+        <li><%= link_to "お気に入りの投稿", tasting_path %></li>
         <li><%= link_to "Log out", logout_path, method: :delete %></li>
       <% else %>
         <li><%=link_to "新規登録",signup_path%></li>

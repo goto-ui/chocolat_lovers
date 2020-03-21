@@ -3,29 +3,34 @@
 ## CHOCOLAT_LOVERS
 
 チョコレートに関する情報を投稿、共有するtwitter風のwebサイトになります
+
 railsチュートリアルなどを参考にして作成しました。
 
 ## 本番環境
+
 https://afternoon-savannah-19774.herokuapp.com/
+
 ログインするときは新規登録から適当なメールアドレスとパスワードでログインしてください
 
 ## 機能一覧
-・ユーザー登録
-・ログイン。ログアウト機能
-・ajaxを活用したユーザー間でのフォロー、フォロワー機能
-・ツイート投稿機能(CRUD)
-・ツイート一覧表示の際などのページネーション機能
-・ステータスフィード実装
+
+* ユーザー登録
+* ログイン。ログアウト機能
+* ajaxを活用したユーザー間でのフォロー、フォロワー機能
+* ツイート投稿機能(CRUD)
+* ツイート一覧表示の際などのページネーション機能
+* ステータスフィード実装
 
 ## 使用技術
-・GitHub,Git
-・heroku
-・Ruby 2.6.3
-・Ruby on Rayls 5.1.6
-・SQLite(開発環境)
-・PostgreSQL（本番環境）
-・boostrap
-・cloud9
+
+* GitHub,Git
+* heroku
+* Ruby 2.6.3
+* Ruby on Rayls 5.1.6
+* SQLite(開発環境)
+* PostgreSQL（本番環境）
+* boostrap
+* cloud9
 
 The MIT License
 
